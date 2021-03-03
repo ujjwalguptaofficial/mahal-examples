@@ -1,17 +1,17 @@
 <html>
     <div class="column center container">
-        <newTask class="margin-bottom-20px" on:newTask="addTask" />
+        <newTodo class="margin-bottom-20px" on:newTask="addTask" />
         <todo on:remove="removeTask" class="margin-top-20px" #for(task in tasks) :task="task" />
     </div>
 </html>
 <script>
 import {Component, Reactive, Children} from "mahal";
 import Todo from "./todo.mahal";
-import NewTask from "./new-task.mahal";
+import NewTodo from "./new-todo.mahal";
 
 @Children({
     'todo':Todo,
-    'newTask':NewTask
+    'newTodo':NewTodo
 })
 export default class Root extends Component {
 
@@ -22,11 +22,13 @@ export default class Root extends Component {
 
     constructor(){
         super();
-        this.on("rendered",()=>{
-            this.addTask({
-                title:"Buy shoe",
-                description:"Buy a canvas shoe from Myntra"
-            })
+        this.on("rendered",this.onRendered.bind(this))
+    }
+
+    onRendered(){
+        this.addTask({
+            title:"Buy shoe",
+            description:"Buy a canvas shoe from Myntra"
         })
     }
 

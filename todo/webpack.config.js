@@ -1,5 +1,5 @@
 const path = require('path');
-const TajPlugin = require('mahal-webpack-loader/lib/plugin');
+const MahalPlugin = require('mahal-webpack-loader/lib/plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 
@@ -45,7 +45,9 @@ module.exports = {
         path: path.resolve(__dirname, 'bin/')
     },
     plugins: [
-        new TajPlugin(),
+        new MahalPlugin({
+            lang: 'ts'
+        }),
         new HtmlWebPackPlugin({
             cache: true,
             hash: true,
