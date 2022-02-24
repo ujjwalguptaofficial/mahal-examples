@@ -1,31 +1,34 @@
+---
+name: todo.mahal
+description:
+dateCreated:
+---
+
 <html>
-    <div class="row content-v-center">
-        <div class="title">{{task.title}}</div>
-        <div class="description">{{task.description}}</div>
-        <button on:click="remove" class="btn small error margin-left-20px">Remove</button>
-    </div>
+<div class="row content-v-center">
+	<div class="title">{{task.title}}</div>
+	<div class="description">{{task.description}}</div>
+	<button on:click="remove" class="btn small error margin-left-20px">Remove</button>
+</div>
 </html>
 <script>
-import {Prop, Component} from "mahal"
+import { Prop, Component } from "mahal";
 export default class extends Component {
+    @Prop("object")
+    task;
 
-    @Prop('object')
-    task
-
-    remove(){
-        this.emit("remove", this.task.id)
+    remove() {
+        this.emit("remove", this.task.id);
     }
 }
-
 </script>
 <style>
-.title{
-    font-weight:bold;
-    width:25%;
+.title {
+    font-weight: bold;
+    width: 25%;
 }
-.description{
-    margin-left:20px;
-    width:50%;
+.description {
+    margin-left: 20px;
+    width: 50%;
 }
-
 </style>
