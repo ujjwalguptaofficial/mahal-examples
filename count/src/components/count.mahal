@@ -1,0 +1,32 @@
+---
+name : count.mahal
+description :
+dateCreated :  
+---
+
+<<html>
+
+<div>
+  <div>{{count}}</div>
+  <button on:click="incrementCount">Increment count</button>
+</div>
+
+</html>
+
+<script>
+import { Component, Reactive } from "mahal";
+export default class extends Component{
+
+  @Reactive
+  count = 0;
+
+  incrementCount(){
+    this.count++;
+  }
+}
+</script>
+
+
+<style>
+
+</style>
