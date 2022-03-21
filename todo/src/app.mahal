@@ -7,7 +7,9 @@ dateCreated:
 <html>
 <div class="column center container">
 	<NewTodo class="margin-bottom-20px" @newTask="addTask" />
-	<Todo @remove="removeTask" class="margin-top-20px" :for(task in tasks) :task="task" />
+    <fragment :for(task in tasks)>
+	    <Todo @remove="removeTask" class="margin-top-20px" :task="task" />
+    </fragment>
 </div>
 </html>
 <script>
@@ -27,15 +29,16 @@ export default class App extends Component {
     tasks = [];
 
     onInit() {
-        this.on("rendered", this.onRendered);
+        this.on("mount", this.onMounted);
     }
 
-    onRendered() {
+    onMounted() {
         this.addTask({
             title: "Buy shoe",
             description: "Buy a canvas shoe from Myntra",
         });
     }
+
     addTask(task) {
         task.id = ++this.uniqueId;
         this.tasks.push(task);
