@@ -7,9 +7,7 @@ dateCreated:
 <html>
 <div class="column center container">
 	<NewTodo class="margin-bottom-20px" @newTask="addTask" />
-    <fragment :for(task in tasks)>
-	    <Todo @remove="removeTask" class="margin-top-20px" :task="task" />
-    </fragment>
+	<Todo :for(task in tasks) @remove="removeTask" class="margin-top-20px" :task="task" />
 </div>
 </html>
 <script>
