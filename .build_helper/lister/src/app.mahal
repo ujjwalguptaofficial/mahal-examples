@@ -8,9 +8,9 @@ dateCreated:
 <div class="app">
 	<div>Mahal Examples</div>
 	<div class="app_list">
-		<div :for(app in appList) class="app_list_name" @click="onAppClick(app)">
+		<a :for(app in appList) class="app_list_name" :href="app.buildPath">
 			{{app.name | upperCase}}
-		</div>
+		</a>
 	</div>
 </div>
 </html>

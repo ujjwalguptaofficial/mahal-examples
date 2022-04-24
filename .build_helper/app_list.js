@@ -1,10 +1,10 @@
 exports.appList = [
     {
         name: 'todo',
-        buildPath: '/todo'
+        buildPath: 'todo'
     },
     {
         name: 'count',
-        buildPath: '/count'
+        buildPath: 'count'
     }
 ]
