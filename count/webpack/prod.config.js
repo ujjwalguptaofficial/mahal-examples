@@ -1,5 +1,6 @@
 const { merge } = require('webpack-merge')
 const baseConfig = require('./base.config')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 const prod = merge(baseConfig, {
     mode: 'production',

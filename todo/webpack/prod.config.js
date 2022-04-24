@@ -1,11 +1,12 @@
 const { merge } = require('webpack-merge')
 const baseConfig = require('./base.config')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 const prod = merge(baseConfig, {
     mode: 'production',
     devtool: false,
     output: {
-        publicPath: '/',
+        publicPath: '/mahal-examples/todo',
         filename: 'js/[name].[contenthash].bundle.js',
     },
     optimization: {
