@@ -1,0 +1,59 @@
+---
+name: app.mahal
+description: This component is the main parent component which is used to initiate the app.
+dateCreated:
+---
+
+<html>
+<div class="app">
+	<div>Mahal Examples</div>
+	<div class="app_list">
+		<div :for(app in appList) class="app_list_name" @click="onAppClick(app)">
+			{{app.name | upperCase}}
+		</div>
+	</div>
+</div>
+</html>
+
+<script>
+import { Component, Children, Formatter } from "mahal";
+import MahalIntro from "@/components/mahal_intro.mahal";
+import appList from "../app_list";
+@Children({
+    MahalIntro,
+})
+export default class extends Component {
+    get appList() {
+        return appList;
+    }
+
+    @Formatter("upperCase")
+    toUpperCase(value) {
+        return value.toUpperCase();
+    }
+
+    onAppClick(app) {
+        window.location.href = app.buildPath;
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+.app {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.app_list {
+    display: flex;
+    margin-top: 20px;
+}
+.app_list_name {
+    display: flex;
+    padding: 20px;
+    border: 1px solid;
+    margin: 0 10px;
+    cursor: pointer;
+}
+</style>
