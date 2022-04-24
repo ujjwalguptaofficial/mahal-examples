@@ -6,7 +6,7 @@ const prod = merge(baseConfig, {
     mode: 'production',
     devtool: false,
     output: {
-        publicPath: '/',
+        publicPath: '/mahal-examples/count',
         filename: 'js/[name].[contenthash].bundle.js',
     },
     optimization: {
