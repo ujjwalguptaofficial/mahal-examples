@@ -33,7 +33,7 @@ jobs:
       - name: Build
         run: |
          cd .build_helper && npm ci
-         node .build_helper/example_dist_creator.js
+         node example_dist_creator.js
       # Runs a set of commands using the runners shell
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
