@@ -1,10 +1,10 @@
-export default [
+exports.appList = [
     {
         name: 'todo',
-        buildPath: '/todo/dist'
+        buildPath: '/todo'
     },
     {
         name: 'count',
-        buildPath: '/count/dist'
+        buildPath: '/count'
     }
 ]

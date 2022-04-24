@@ -8,7 +8,7 @@ const prod = merge(baseConfig, {
     output: {
         publicPath: '/',
         filename: 'js/[name].[contenthash].bundle.js',
-        path: path.resolve(path.join(__dirname, '../../../'), 'example_dist'),
+        // path: path.resolve(path.join(__dirname, '../../../'), 'example_dist'),
     },
     optimization: {
         minimize: true,
