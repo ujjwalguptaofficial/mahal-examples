@@ -18,7 +18,7 @@ dateCreated:
 <script>
 import { Component, Children, Formatter } from "mahal";
 import MahalIntro from "@/components/mahal_intro.mahal";
-import appList from "../../app_list";
+import { appList } from "../../app_list";
 @Children({
     MahalIntro,
 })
