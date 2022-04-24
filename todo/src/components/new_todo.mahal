@@ -1,7 +1,9 @@
 ---
 name: new_todo.mahal
-description:
-dateCreated:
+description: It helps you create new task. Contains input box to and a button to create task.
+events:
+    newTask : emits the task details when click on add.
+dateCreated: April 24, 2022
 ---
 
 <html>

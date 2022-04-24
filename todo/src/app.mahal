@@ -1,13 +1,13 @@
 ---
 name: app.mahal
 description: This component is the main parent component which is used to initiate the app.
-dateCreated:
+dateCreated: April 24, 2022
 ---
 
 <html>
 <div class="column center container">
-	<NewTodo class="margin-bottom-20px" @newTask="addTask" />
-	<Todo :for(task in tasks) @remove="removeTask" class="margin-top-20px" :task="task" />
+	<NewTodo class="mb-20px" @newTask="addTask" />
+	<Todo :for(task in tasks) @remove="removeTask" class="mt-20px" :task="task" />
 </div>
 </html>
 <script>
