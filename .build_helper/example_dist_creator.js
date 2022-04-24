@@ -30,4 +30,4 @@ function buildLister() {
 }
 
 buildApps();
-// buildLister();
+buildLister();
