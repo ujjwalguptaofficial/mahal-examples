@@ -42,7 +42,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "a,abbr,acronym,address,applet,article,
 
 /***/ }),
 
-/***/ 773:
+/***/ 902:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -593,14 +593,14 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ 637:
+/***/ 128:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/mahal/dist/npm.export.js
 var npm_export = __webpack_require__(427);
-;// CONCATENATED MODULE: ./src/app.mahal?mahal&type=html&id=cb6a1d4c&scoped=false
+;// CONCATENATED MODULE: ./src/app.mahal?mahal&type=html&id=76f84a84&scoped=false
 function anonymous(renderer
 ) {
 const ctx = this;
@@ -622,7 +622,7 @@ return ce('div', [ce('NewTodo', [], {
             v: 'mb-20px'
         }
     }
-}), ...he((task, i) => {
+}), ...he((task, index) => {
     return ce('Todo', [], {
         on: {
             remove: {
@@ -633,6 +633,10 @@ return ce('div', [ce('NewTodo', [], {
             }
         },
         attr: {
+            'key': {
+                v: task.title,
+                k: null
+            },
             'class': {
                 v: 'mt-20px'
             },
@@ -669,9 +673,9 @@ var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleE
 // EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/styleTagTransform.js
 var styleTagTransform = __webpack_require__(589);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
-// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js!./node_modules/mahal-webpack-loader/lib/plugin/scoped_css_loader.js!./node_modules/mahal-webpack-loader/lib/index.js!./src/app.mahal?mahal&type=style&lang=css&index=0&id=cb6a1d4c&scoped=
-var app_mahal_mahal_type_style_lang_css_index_0_id_cb6a1d4c_scoped_ = __webpack_require__(773);
-;// CONCATENATED MODULE: ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/mahal-webpack-loader/lib/plugin/scoped_css_loader.js!./node_modules/mahal-webpack-loader/lib/index.js!./src/app.mahal?mahal&type=style&lang=css&index=0&id=cb6a1d4c&scoped=
+// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js!./node_modules/mahal-webpack-loader/lib/plugin/scoped_css_loader.js!./node_modules/mahal-webpack-loader/lib/index.js!./src/app.mahal?mahal&type=style&lang=css&index=0&id=76f84a84&scoped=
+var app_mahal_mahal_type_style_lang_css_index_0_id_76f84a84_scoped_ = __webpack_require__(902);
+;// CONCATENATED MODULE: ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/mahal-webpack-loader/lib/plugin/scoped_css_loader.js!./node_modules/mahal-webpack-loader/lib/index.js!./src/app.mahal?mahal&type=style&lang=css&index=0&id=76f84a84&scoped=
 
       
       
@@ -693,15 +697,15 @@ options.setAttributes = (setAttributesWithoutAttributes_default());
 options.domAPI = (styleDomAPI_default());
 options.insertStyleElement = (insertStyleElement_default());
 
-var update = injectStylesIntoStyleTag_default()(app_mahal_mahal_type_style_lang_css_index_0_id_cb6a1d4c_scoped_/* default */.Z, options);
+var update = injectStylesIntoStyleTag_default()(app_mahal_mahal_type_style_lang_css_index_0_id_76f84a84_scoped_/* default */.Z, options);
 
 
 
 
-       /* harmony default export */ const index_js_src_app_mahal_mahal_type_style_lang_css_index_0_id_cb6a1d4c_scoped_ = (app_mahal_mahal_type_style_lang_css_index_0_id_cb6a1d4c_scoped_/* default */.Z && app_mahal_mahal_type_style_lang_css_index_0_id_cb6a1d4c_scoped_/* default.locals */.Z.locals ? app_mahal_mahal_type_style_lang_css_index_0_id_cb6a1d4c_scoped_/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const index_js_src_app_mahal_mahal_type_style_lang_css_index_0_id_76f84a84_scoped_ = (app_mahal_mahal_type_style_lang_css_index_0_id_76f84a84_scoped_/* default */.Z && app_mahal_mahal_type_style_lang_css_index_0_id_76f84a84_scoped_/* default.locals */.Z.locals ? app_mahal_mahal_type_style_lang_css_index_0_id_76f84a84_scoped_/* default.locals */.Z.locals : undefined);
 
-;// CONCATENATED MODULE: ./src/app.mahal?mahal&type=style&lang=css&index=0&id=cb6a1d4c&scoped=
- /* harmony default export */ const src_app_mahal_mahal_type_style_lang_css_index_0_id_cb6a1d4c_scoped_ = ((/* unused pure expression or super */ null && (code))); 
+;// CONCATENATED MODULE: ./src/app.mahal?mahal&type=style&lang=css&index=0&id=76f84a84&scoped=
+ /* harmony default export */ const src_app_mahal_mahal_type_style_lang_css_index_0_id_76f84a84_scoped_ = ((/* unused pure expression or super */ null && (code))); 
 ;// CONCATENATED MODULE: ./src/components/todo.mahal?mahal&type=html&id=0a3cf0ff&scoped=false
 function todo_mahal_mahal_type_html_id_0a3cf0ff_scoped_false_anonymous(renderer
 ) {
@@ -1003,14 +1007,14 @@ new_todo_mahal_mahal_type_script_lang_ts_id_f52e6e18_decorate([
     /* harmony default export */ const new_todo_mahal = (new_todo_mahal_component);
 // EXTERNAL MODULE: ./node_modules/flexstyle/dist/index.js
 var dist = __webpack_require__(934);
-;// CONCATENATED MODULE: ./src/app.mahal?mahal&type=script&lang=ts&id=cb6a1d4c
-var app_mahal_mahal_type_script_lang_ts_id_cb6a1d4c_decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+;// CONCATENATED MODULE: ./src/app.mahal?mahal&type=script&lang=ts&id=76f84a84
+var app_mahal_mahal_type_script_lang_ts_id_76f84a84_decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var app_mahal_mahal_type_script_lang_ts_id_cb6a1d4c_metadata = (undefined && undefined.__metadata) || function (k, v) {
+var app_mahal_mahal_type_script_lang_ts_id_76f84a84_metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
@@ -1021,7 +1025,24 @@ let App = class App extends npm_export.Component {
     constructor() {
         super(...arguments);
         this.uniqueId = 0;
-        this.tasks = [];
+        this.tasks = [
+            {
+                title: "Plan a holiday",
+                description: "Check with travel companies for himachal pradesh cost and iternaries.",
+            },
+            {
+                title: "Learn mahal framework",
+                description: "Learn new mahal framework and add it in my resume",
+            },
+            {
+                title: "Buy vegetables",
+                description: "Buy vegetables in evening",
+            },
+            {
+                title: "yoga time",
+                description: "Do 15 min of yoga after logging out for day.",
+            },
+        ];
     }
     onInit() {
         this.on("mount", this.onMounted);
@@ -1043,17 +1064,17 @@ let App = class App extends npm_export.Component {
         }
     }
 };
-app_mahal_mahal_type_script_lang_ts_id_cb6a1d4c_decorate([
+app_mahal_mahal_type_script_lang_ts_id_76f84a84_decorate([
     npm_export.Reactive,
-    app_mahal_mahal_type_script_lang_ts_id_cb6a1d4c_metadata("design:type", Object)
+    app_mahal_mahal_type_script_lang_ts_id_76f84a84_metadata("design:type", Object)
 ], App.prototype, "tasks", void 0);
-App = app_mahal_mahal_type_script_lang_ts_id_cb6a1d4c_decorate([
+App = app_mahal_mahal_type_script_lang_ts_id_76f84a84_decorate([
     (0,npm_export.Children)({
         Todo: todo_mahal,
         NewTodo: new_todo_mahal,
     })
 ], App);
-/* harmony default export */ const app_mahal_mahal_type_script_lang_ts_id_cb6a1d4c = (App);
+/* harmony default export */ const app_mahal_mahal_type_script_lang_ts_id_76f84a84 = (App);
 
 ;// CONCATENATED MODULE: ./src/app.mahal
 
@@ -1064,7 +1085,7 @@ App = app_mahal_mahal_type_script_lang_ts_id_cb6a1d4c_decorate([
 
 ;
     var app_mahal_component = (0,render_component/* renderComponent */.S)({
-        script:app_mahal_mahal_type_script_lang_ts_id_cb6a1d4c,
+        script:app_mahal_mahal_type_script_lang_ts_id_76f84a84,
         render:anonymous
     })
     /* harmony default export */ const app_mahal = (app_mahal_component);
@@ -1100,7 +1121,7 @@ app.create();
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, [331], () => (__webpack_exec__(637)));
+/******/ __webpack_require__.O(0, [331], () => (__webpack_exec__(128)));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
