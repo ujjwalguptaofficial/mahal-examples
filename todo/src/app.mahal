@@ -7,7 +7,7 @@ dateCreated: April 24, 2022
 <html>
 <div class="column center container">
 	<NewTodo class="mb-20px" @newTask="addTask" />
-	<Todo :for(task in tasks) @remove="removeTask" class="mt-20px" :task="task" />
+	<Todo :for(task,index in tasks) :key="task.title" @remove="removeTask" class="mt-20px" :task="task" />
 </div>
 </html>
 <script>
@@ -23,8 +23,27 @@ import "flexstyle";
 export default class App extends Component {
     uniqueId = 0;
 
+ 
+
     @Reactive
-    tasks = [];
+    tasks = [
+        {
+            title: "Plan a holiday",
+            description: "Check with travel companies for himachal pradesh cost and iternaries.",
+        },
+        {
+            title: "Learn mahal framework",
+            description: "Learn new mahal framework and add it in my resume",
+        },
+        {
+            title: "Buy vegetables",
+            description: "Buy vegetables in evening",
+        },
+        {
+            title: "yoga time",
+            description: "Do 15 min of yoga after logging out for day.",
+        },
+    ] as any[];
 
     onInit() {
         this.on("mount", this.onMounted);
