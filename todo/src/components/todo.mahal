@@ -1,6 +1,8 @@
 ---
 name: todo.mahal
 description: Render a task with remove button.
+props:
+    task: task object value which will be shown in UI. 
 events:
     remove: emits the task id which can be used to remove target task.
 dateCreated: April 24, 2022

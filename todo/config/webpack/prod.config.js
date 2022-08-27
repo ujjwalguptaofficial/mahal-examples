@@ -1,17 +1,18 @@
 const { merge } = require('webpack-merge')
 const baseConfig = require('./base.config')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const prod = merge(baseConfig, {
-    mode: 'production',
+    mode: process.env.NODE_ENV || 'development',
     devtool: false,
     output: {
-        publicPath: '/mahal-examples/todo',
+        publicPath: '/',
         filename: 'js/[name].[contenthash].bundle.js',
     },
     optimization: {
         minimize: true,
-        minimizer: [new CssMinimizerPlugin()],
+        minimizer: [`...`, new CssMinimizerPlugin()],
         runtimeChunk: {
             name: 'runtime',
         },
@@ -35,6 +36,14 @@ const prod = merge(baseConfig, {
             },
         },
     },
+    plugins: [
+        new CopyPlugin({
+            patterns: [{
+                from: './assets/',
+                to: ''
+            }]
+        })
+    ],
     performance: {
         hints: false,
         maxEntrypointSize: 512000,
