@@ -4,7 +4,7 @@ This project contains several examples for [mahal frameworks](https://github.com
 
 # Preview
 
-The examples can be previewed at - https://ujjwalguptaofficial.github.io/mahal-examples/count/
+The examples can be previewed at - https://ujjwalguptaofficial.github.io/mahal-examples/
 
 # Help
 
