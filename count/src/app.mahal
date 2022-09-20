@@ -9,10 +9,10 @@ dateCreated:
 </html>
 
 <script>
-import { Component, Children } from "mahal";
+import { Component, children } from "mahal";
 import Count from "@/components/count.mahal";
 
-@Children({
+@children({
     Count,
 })
 export default class extends Component {}

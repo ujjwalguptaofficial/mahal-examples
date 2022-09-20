@@ -15,9 +15,9 @@ dateCreated: April 21, 2022
 </html>
 
 <script>
-import { Component, Reactive } from "mahal";
+import { Component, reactive } from "mahal";
 export default class extends Component {
-    @Reactive
+    @reactive
     count = 0;
 
     incrementCount() {
