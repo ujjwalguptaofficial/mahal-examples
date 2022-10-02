@@ -10,7 +10,7 @@ function buildApps() {
         const appPath = path.resolve(rootPath, app.name);
         const publicPath = appPath.split('/').slice(-2).join('/');
         // console.log('publicPath', publicPath);
-        execSync(`cd ${appPath} && npm ci && PUBLIC_PATH=${publicPath}  npm run deploy`);
+        execSync(`cd ${appPath} && npm ci && PUBLIC_PATH=/${publicPath}  npm run deploy`);
         console.log(`build done for ${app.name}`);
         copySync(
             path.join(appPath, 'dist/'),
