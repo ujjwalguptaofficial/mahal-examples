@@ -7,7 +7,7 @@ const prod = merge(baseConfig, {
     mode: process.env.NODE_ENV || 'development',
     devtool: false,
     output: {
-        publicPath: '/',
+        publicPath: process.env.PUBLIC_PATH || '/',
         filename: 'js/[name].[contenthash].bundle.js',
     },
     optimization: {
