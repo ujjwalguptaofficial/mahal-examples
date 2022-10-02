@@ -8,7 +8,9 @@ const rootPath = path.join(__dirname, "../");
 function buildApps() {
     appList.forEach(app => {
         const appPath = path.resolve(rootPath, app.name);
-        execSync(`cd ${appPath} && npm ci && npm run deploy`);
+        const publicPath = appPath.split('/').slice(-2).join('/');
+        // console.log('publicPath', publicPath);
+        execSync(`cd ${appPath} && npm ci && PUBLIC_PATH=${publicPath}  npm run deploy`);
         console.log(`build done for ${app.name}`);
         copySync(
             path.join(appPath, 'dist/'),

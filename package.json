@@ -1,0 +1,22 @@
+{
+  "name": "mahal-examples",
+  "version": "1.0.0",
+  "description": "This project contains several examples for [mahal frameworks](https://github.com/ujjwalguptaofficial/mahal) to help users learn & understand.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ujjwalguptaofficial/mahal-examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ujjwalguptaofficial/mahal-examples/issues"
+  },
+  "homepage": "https://github.com/ujjwalguptaofficial/mahal-examples#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

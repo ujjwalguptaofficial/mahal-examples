@@ -3,11 +3,13 @@ const baseConfig = require('./base.config')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
+console.log('process.env.PUBLIC_PATH', process.env.PUBLIC_PATH);
+
 const prod = merge(baseConfig, {
     mode: process.env.NODE_ENV || 'development',
     devtool: false,
     output: {
-        publicPath: '/',
+        publicPath: process.env.PUBLIC_PATH || '/',
         filename: 'js/[name].[contenthash].bundle.js',
     },
     optimization: {
